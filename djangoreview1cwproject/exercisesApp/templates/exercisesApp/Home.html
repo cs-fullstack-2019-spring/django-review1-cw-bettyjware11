@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Home Page</h1>
+
+<h2>
+    {% block pagename %}
+    Home Page
+    <nav>
+    <a href="{% url 'page2' %}">I came from the Home page</a>
+    <a href="{% url 'page3' %}">I came from page 2</a>
+    <a href="{% url 'page4' %}">I came from page 3</a>
+    <a href="{% url 'page5' %}">I came from page 4</a>
+    </nav>
+    {% endblock pagename %}
+</h2>
+</body>
+</html>
